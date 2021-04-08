@@ -33,7 +33,7 @@ function minesweeper(matrix) {
       if (i >= 1 && j >= 1 && matrix[i - 1][j - 1] === true) {
         count++;
       }
-      if (i >= 1 && j < matrix[i].length - 1 && matrix[i - 1][j] === true) {
+      if (i >= 1 && j <= matrix[i].length - 1 && matrix[i - 1][j] === true) {
         count++;
       }
       if (i >= 1 && j < matrix[i].length - 1 && matrix[i - 1][j + 1] === true) {
